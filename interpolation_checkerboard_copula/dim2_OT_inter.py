@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# File: OT_inter.py
+# File: dim2_OT_inter.py
 #
 # This Python implementation is translated and adapted from the original MATLAB
 # code in the repository "2013-SIIMS-ot-splitting" by N. Papadakis, G. Peyré, E. Oudet.  
