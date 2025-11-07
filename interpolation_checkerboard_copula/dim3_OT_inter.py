@@ -1,3 +1,25 @@
+# -----------------------------------------------------------------------------
+# File: dim3_OT_inter.py
+#
+# This Python implementation is translated and adapted from the original MATLAB
+# code in the repository "2013-SIIMS-ot-splitting" by N. Papadakis, G. Peyré, E. Oudet.  
+# Original repository: https://github.com/gpeyre/2013-SIIMS-ot-splitting  
+#
+# Reference:
+#   Papadakis, N., Peyré, G., & Oudet, E. (2014).
+#   "Optimal Transport with Proximal Splitting."
+#   SIAM Journal on Imaging Sciences, 7(1), 212–238.
+#
+# Original copyright: (c) 2009 Gabriel Peyré 
+#
+# License / Use terms:
+#   - This code follows the original copyright notice and respects the author's
+#     rights as declared in the original repository.
+#   - If the original repository is later confirmed to have a specific open license
+#     (e.g. MIT, BSD, GPL), this code should be distributed under compatible terms.
+#
+# -----------------------------------------------------------------------------
+
 import numpy as np
 import cmath
 import math
