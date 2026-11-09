@@ -17,15 +17,7 @@ A natural approach is displacement interpolation based on optimal transport. How
 
 This project implements a displacement-like interpolation method for checkerboard copulas. The approach constructs continuous paths through elementary mass movements between neighboring cells, preserving the copula property throughout the interpolation.
 
-By incorporating dynamical optimal transport, the resulting interpolation can closely approximate the Wasserstein-2 geodesic between the given copulas.
-
-## Main Features
-
-- Continuous interpolation between checkerboard copulas.
-- Preservation of uniform marginals along the interpolation path.
-- Construction using adjacent-cell mass movements.
-- Displacement-like interpolation guided by dynamical optimal transport.
-- Implementations for two- and three-dimensional copulas.
+To guide the interpolation, intermediate distributions along a dynamical optimal transport path are transformed into checkerboard copulas. These copulas are then connected through continuous local interpolations, yielding a displacement-like path that preserves uniform marginals.
 
 ## Numerical Examples
 
@@ -33,16 +25,14 @@ The accompanying paper considers the following examples:
 
 ### 1. Gaussian and Gumbel Copulas
 
-Interpolation between a Gaussian copula with correlation parameter 0.8 and a Gumbel copula with parameter 2.3.
+Interpolation between checkerboard approximations of a Gaussian copula with correlation parameter 0.8 and a Gumbel copula with parameter 2.3.
 
 The experiment illustrates the evolution of the dependence structure and compares the resulting interpolation with the Wasserstein displacement path.
 
 ### 2. Fuel Injector Data
 
-An application to dependence modeling under different operating conditions of a jet-engine fuel injector.
+An application to the dependence between droplet y-position and x-velocity under two operating conditions of a jet-engine fuel injector.
 
-The interpolation models the evolution of dependence between droplet position and velocity.
+### 3. Three-Dimensional Gaussian Copulas
 
-### 3. Three-Dimensional Copulas
-
-Interpolation between checkerboard approximations of two three-dimensional Gaussian copulas, illustrating the extension to higher dimensions.
+Interpolation between checkerboard approximations of two three-dimensional Gaussian copulas with different correlation matrices, illustrating the extension of the method to higher dimensions.
