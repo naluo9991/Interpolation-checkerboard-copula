@@ -1,1 +1,1 @@
-# Intrepolation-checkerboard-copula
+# Interpolation-checkerboard-copula
