@@ -27,34 +27,6 @@ By incorporating dynamical optimal transport, the resulting interpolation can cl
 - Displacement-like interpolation guided by dynamical optimal transport.
 - Implementations for two- and three-dimensional copulas.
 
-## Repository Structure
-
-```text
-Interpolation-checkerboard-copula/
-├── interpolation_checkerboard_copula/
-│   └── ...          # Python implementation and experiments
-└── README.md
-```
-
-TODO: Add descriptions of the main Python files and their functions.
-
-## Requirements
-
-Python and the scientific computing libraries used by the implementation.
-
-TODO: Specify Python version and package dependencies.
-
-## Usage
-
-Clone the repository:
-
-```bash
-git clone https://github.com/naluo9991/Interpolation-checkerboard-copula.git
-cd Interpolation-checkerboard-copula
-```
-
-TODO: Add dependency installation and commands for running the main examples.
-
 ## Numerical Examples
 
 The accompanying paper considers the following examples:
@@ -77,17 +49,7 @@ Interpolation between checkerboard approximations of two three-dimensional Gauss
 
 TODO: Link each example to its corresponding script and output figures, where available.
 
-## Citation
 
-If you use this code in your research, please cite:
 
-Grothe, O., & Luo, N. (2026).
-Continuous displacement interpolation between checkerboard copulas.
-*Dependence Modeling*, 14(1), 20250018.
-https://doi.org/10.1515/demo-2025-0018
-
-## License
-
-TODO: Add the software license.
 
 
