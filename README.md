@@ -46,10 +46,3 @@ The interpolation models the evolution of dependence between droplet position an
 ### 3. Three-Dimensional Copulas
 
 Interpolation between checkerboard approximations of two three-dimensional Gaussian copulas, illustrating the extension to higher dimensions.
-
-TODO: Link each example to its corresponding script and output figures, where available.
-
-
-
-
-
