@@ -1,9 +1,93 @@
-# Interpolation of Checkerboard Copulas
 
-This repository provides Python code for continuous displacement interpolation
-between checkerboard copulas in two and three dimensions. The code accompanies the following paper:
+# Continuous Displacement Interpolation Between Checkerboard Copulas
 
-Grothe, O., & Luo, N. (2026).
+This repository contains Python implementations of continuous displacement-like interpolation between checkerboard copulas in two and three dimensions.
+
+The code accompanies the paper:
+
+**Grothe, O., & Luo, N. (2026).**
 [Continuous displacement interpolation between checkerboard copulas](https://doi.org/10.1515/demo-2025-0018).
 *Dependence Modeling*, 14(1), 20250018.
+
+## Overview
+
+Copulas describe the dependence structure between random variables independently of their marginal distributions. Interpolating between two copulas provides a way to model how dependence structures evolve between different states.
+
+A natural approach is displacement interpolation based on optimal transport. However, standard Wasserstein displacement interpolation does not generally preserve the uniform marginals required of a copula.
+
+This project implements a displacement-like interpolation method for checkerboard copulas. The approach constructs continuous paths through elementary mass movements between neighboring cells, preserving the copula property throughout the interpolation.
+
+By incorporating dynamical optimal transport, the resulting interpolation can closely approximate the Wasserstein-2 geodesic between the given copulas.
+
+## Main Features
+
+- Continuous interpolation between checkerboard copulas.
+- Preservation of uniform marginals along the interpolation path.
+- Construction using adjacent-cell mass movements.
+- Displacement-like interpolation guided by dynamical optimal transport.
+- Implementations for two- and three-dimensional copulas.
+
+## Repository Structure
+
+```text
+Interpolation-checkerboard-copula/
+├── interpolation_checkerboard_copula/
+│   └── ...          # Python implementation and experiments
+└── README.md
+```
+
+TODO: Add descriptions of the main Python files and their functions.
+
+## Requirements
+
+Python and the scientific computing libraries used by the implementation.
+
+TODO: Specify Python version and package dependencies.
+
+## Usage
+
+Clone the repository:
+
+```bash
+git clone https://github.com/naluo9991/Interpolation-checkerboard-copula.git
+cd Interpolation-checkerboard-copula
+```
+
+TODO: Add dependency installation and commands for running the main examples.
+
+## Numerical Examples
+
+The accompanying paper considers the following examples:
+
+### 1. Gaussian and Gumbel Copulas
+
+Interpolation between a Gaussian copula with correlation parameter 0.8 and a Gumbel copula with parameter 2.3.
+
+The experiment illustrates the evolution of the dependence structure and compares the resulting interpolation with the Wasserstein displacement path.
+
+### 2. Fuel Injector Data
+
+An application to dependence modeling under different operating conditions of a jet-engine fuel injector.
+
+The interpolation models the evolution of dependence between droplet position and velocity.
+
+### 3. Three-Dimensional Copulas
+
+Interpolation between checkerboard approximations of two three-dimensional Gaussian copulas, illustrating the extension to higher dimensions.
+
+TODO: Link each example to its corresponding script and output figures, where available.
+
+## Citation
+
+If you use this code in your research, please cite:
+
+Grothe, O., & Luo, N. (2026).
+Continuous displacement interpolation between checkerboard copulas.
+*Dependence Modeling*, 14(1), 20250018.
+https://doi.org/10.1515/demo-2025-0018
+
+## License
+
+TODO: Add the software license.
+
 
