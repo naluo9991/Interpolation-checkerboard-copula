@@ -36,3 +36,24 @@ An application to the dependence between droplet y-position and x-velocity under
 ### 3. Three-Dimensional Gaussian Copulas
 
 Interpolation between checkerboard approximations of two three-dimensional Gaussian copulas with different correlation matrices, illustrating the extension of the method to higher dimensions.
+
+## Repository Contents
+
+The main code and example notebooks are located in `interpolation_checkerboard_copula/`.
+
+| File or directory | Description |
+| --- | --- |
+| `dim2_interpolation.ipynb` | Two-dimensional interpolation examples, including the fuel injector application. |
+| `dim3_interpolation.ipynb` | Three-dimensional interpolation examples. |
+| `dim2_OT_inter.py` | Numerical routines for dynamical optimal transport in two dimensions. |
+| `dim3_OT_inter.py` | Numerical routines for dynamical optimal transport in three dimensions. |
+| `02_Estimation_t2000test/` | Data files used in the fuel injector example. |
+
+## Usage
+
+1. Download or clone this repository.
+2. Start Jupyter Notebook from the `interpolation_checkerboard_copula/` directory.
+3. Open `dim2_interpolation.ipynb` for the two-dimensional examples, or `dim3_interpolation.ipynb` for the three-dimensional examples.
+4. Run the cells for the selected example in order, with the required Python packages installed.
+
+Keep the original directory structure, as the notebooks import the local Python modules and access data files using relative paths.
